@@ -17,7 +17,6 @@ class Problem1 {
             Player pobi = new Player(asPages(pobiPageNumbers));
             Player crong = new Player(asPages(crongPageNumbers));
 
-
             BattleResult battleResult = pobi.battleWith(crong);
             return battleResult.getCode();
         } catch (RuntimeException e) {
@@ -30,8 +29,4 @@ class Problem1 {
                 .map(pageNumber -> new Page(pageNumber))
                 .collect(Collectors.toList());
     }
-
-
-
-
 }
